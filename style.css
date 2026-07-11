@@ -330,3 +330,90 @@ footer h2{
     font-size:14px;
 
 }
+
+/* ==========================================================================
+   CONFIGURAÇÕES PARA DISPOSITIVOS MÓVEIS (Telas de até 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+    
+    /* Cabeçalho */
+    header {
+        padding: 15px 20px; /* Reduz o espaçamento nas laterais */
+        justify-content: center; /* Centraliza a logo no celular */
+    }
+
+    /* Seção Hero (Início) */
+    .hero {
+        padding: 40px 20px;
+        flex-direction: column-reverse; /* Coloca a foto em cima e o texto embaixo */
+        gap: 30px;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%; /* O texto passa a ocupar toda a largura disponível */
+    }
+
+    .hero-text h1 {
+        font-size: 32px; /* Diminui o tamanho do título para não quebrar feio */
+        margin-bottom: 15px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .hero-img img {
+        width: 100%; /* A imagem se adapta ao tamanho do celular */
+        max-width: 280px; /* Mas não passa de 280px para não ficar gigante */
+    }
+
+    button {
+        width: 100%; /* O botão do WhatsApp fica larguinho, mais fácil de clicar */
+        padding: 14px 20px;
+    }
+
+    /* Seção Serviços */
+    .servicos {
+        padding: 50px 20px;
+    }
+
+    .servicos h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        width: 100%; /* Os cards ocupam a largura total da tela do celular */
+    }
+
+    /* Seção Sobre Mim */
+    .sobre {
+        padding: 50px 20px;
+        flex-direction: column; /* Coloca a foto em cima e o texto embaixo */
+        gap: 30px;
+    }
+
+    .sobre-img img {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .sobre-texto {
+        text-align: center;
+    }
+
+    .sobre-texto h2 {
+        font-size: 30px;
+    }
+
+    .sobre-texto p {
+        font-size: 16px;
+    }
+
+    .sobre-texto ul {
+        text-align: left; /* Mantém a lista de benefícios alinhada à esquerda */
+        display: inline-block; /* Centraliza o bloco da lista na tela */
+    }
+}
